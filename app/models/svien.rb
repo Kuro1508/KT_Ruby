@@ -1,0 +1,2 @@
+class Svien < ApplicationRecord
+end

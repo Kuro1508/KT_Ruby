@@ -1,0 +1,18 @@
+<%= form_for @svien, url:{action:"update"} do |c| -%>
+    <div class="modal-header">						
+        <h4 class="modal-title">Add Employee</h4>     
+    </div>
+    <div class="modal-body">					
+        <div class="form-group">
+            <label><%= c.label :Name  %> </label>
+            <%= c.text_field :name ,{:class =>"form-control"} %>
+        </div>
+        <div class="form-group">
+            <label><%= c.label :Class %> </label>
+            <%= c.text_field :nclass, {:class =>"form-control"} %>
+        </div>					
+    </div>
+    <div  class="modal-footer"  >
+        <%= c.submit "Save" ,{:class =>"btn btn-success",:type => "submit"} %> 
+    </div>
+    <% end -%>
